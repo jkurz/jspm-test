@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="jspm_packages/system.js"></script>
+        <script src="config.js"></script>
+        <script>
+            System.import('app');
+        </script>
+    </head>
+    <body ng-app="app" ng-controller="AppCtrl as vm">
+        <span ng-bind="vm.hello"></span>
+        <button ng-click="vm.sayHello()"></button>
+    </body>
+</html>
+

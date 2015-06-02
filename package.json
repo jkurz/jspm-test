@@ -1,0 +1,24 @@
+{
+  "name": "jspm-test",
+  "version": "0.0.1",
+  "description": "A test for jspm",
+  "main": "index.js",
+  "scripts": {},
+  "author": "joshkurz",
+  "license": "ISC",
+  "jspm": {
+    "directories": {},
+    "dependencies": {
+      "angular": "github:angular/bower-angular@^1.4.0",
+      "babel": "npm:babel-core@^5.4.7"
+    },
+    "devDependencies": {
+      "babel-runtime": "npm:babel-runtime@^5.4.3",
+      "bable": "npm:babel-core@^5.4.3",
+      "bable-runtime": "npm:babel-runtime@^5.4.3",
+      "core-js": "npm:core-js@^0.9.10",
+      "traceur": "github:jmcriffey/bower-traceur@0.0.89",
+      "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.89"
+    }
+  }
+}
