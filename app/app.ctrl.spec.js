@@ -1,8 +1,6 @@
 import angular from 'angular';
 import mocks from 'angular-mocks'
 
-console.log('hahaha hahaha')
-
 describe('Index Ctrl', function() {
     var $controller,
         scope;
