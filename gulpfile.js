@@ -1,18 +1,13 @@
 // modules
 var gulp = require("gulp"),
-    path = require("path"),
     pkg = require("./package.json"),
     karma = require('karma').server,
-    del = require("del"),
-    finalhandler = require('finalhandler'),
-    http = require('http'),
-    serveStatic = require('serve-static'),
     $ = require('gulp-load-plugins')();
 
+
+
 // settings for gulpfile
-var MODULE_NAME =  'unlockedApp',
-    SRC  = 'app',
-    SRC_ALL  = path.join(SRC, '**');
+var karmaCfg = __dirname + '/karma.conf.js';
 
 gulp.task("default", ["run"]);
 gulp.task("run", run);
@@ -25,8 +20,7 @@ function run() {
 
 // test application
 function testApp () {
-    console.log(KARMA.cfg)
-  karma.start({configFile: KARMA.cfg}, function (exitCode) {
+  karma.start({configFile: karmaCfg}, function (exitCode) {
     $.util.log('Karma has exited with ' + exitCode);
     process.exit(exitCode);
   });
